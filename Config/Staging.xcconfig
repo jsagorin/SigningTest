@@ -1,0 +1,11 @@
+//
+//  Staging.xcconfig
+//  SigningTest
+//
+//  Created by Jonny Sagorin on 21/02/17.
+//  Copyright © 2017 Jonny Sagorin. All rights reserved.
+//
+
+PRODUCT_NAME = STAGINGVALUEHERE
+PRODUCT_BUNDLE_IDENTIFIER = STAGINGVALUEHERE
+PROVISIONING_PROFILE_SPECIFIER = STAGINGVALUEHERE

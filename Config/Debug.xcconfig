@@ -1,0 +1,11 @@
+//
+//  Debug.xcconfig
+//  SigningTest
+//
+//  Created by Jonny Sagorin on 21/02/17.
+//  Copyright © 2017 Jonny Sagorin. All rights reserved.
+//
+
+PRODUCT_NAME = DEBUGVALUEHERE
+PRODUCT_BUNDLE_IDENTIFIER = DEBUGVALUEHERE
+PROVISIONING_PROFILE_SPECIFIER = DEBUGVALUEHERE
