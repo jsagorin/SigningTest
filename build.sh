@@ -21,7 +21,7 @@ echo "Target is $TARGET"
 xcodebuild archive \
   -verbose \
   -jobs 2 \
-  -project SigningTest.xcodeproj \
+  -workspace SigningTest.xcworkspace \
     -scheme SigningTest \
     -configuration $TARGET \
     -derivedDataPath "$PWD/DerivedData" \
@@ -33,12 +33,11 @@ xcodebuild archive \
 # xcodebuild archive \
 #   -verbose \
 #   -jobs 2 \
-#   -project SigningTest.xcodeproj \
+#   -workspace SigningTest.xcworkspace \
 #     -scheme SigningTest \
 #     -configuration $TARGET \
 #     -derivedDataPath "$PWD/DerivedData" \
 #     -archivePath ./build/SigningTest.xcarchive \
-#     || exit 1
 #     PRODUCT_BUNDLE_IDENTIFIER=insert.your.value.here \
 #     PROVISIONING_PROFILE_SPECIFIER="My specific prov profile name here" \
 #     || exit 1

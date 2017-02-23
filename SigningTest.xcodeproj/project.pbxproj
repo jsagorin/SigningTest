@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D83E1B035191512703D97A9 /* Pods_SigningTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCD2CEDB5A95CA80451FEA0 /* Pods_SigningTest.framework */; };
 		8990E8FE1E5BCFAB0050DD6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8990E8FD1E5BCFAB0050DD6F /* AppDelegate.swift */; };
 		8990E9001E5BCFAB0050DD6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8990E8FF1E5BCFAB0050DD6F /* ViewController.swift */; };
 		8990E9031E5BCFAB0050DD6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8990E9011E5BCFAB0050DD6F /* Main.storyboard */; };
@@ -15,7 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8990E8FA1E5BCFAB0050DD6F /* SigningTestDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SigningTestDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		150D3FDB078C8DD314027A94 /* Pods-SigningTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SigningTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SigningTest/Pods-SigningTest.release.xcconfig"; sourceTree = "<group>"; };
+		537B960ED2BDB865470DF836 /* Pods-SigningTest.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SigningTest.staging.xcconfig"; path = "Pods/Target Support Files/Pods-SigningTest/Pods-SigningTest.staging.xcconfig"; sourceTree = "<group>"; };
+		8990E8FA1E5BCFAB0050DD6F /* DEBUGVALUEHERE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DEBUGVALUEHERE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8990E8FD1E5BCFAB0050DD6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8990E8FF1E5BCFAB0050DD6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8990E9021E5BCFAB0050DD6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -25,6 +28,9 @@
 		89D2DDDF1E5BF7D000548048 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		89D2DDE01E5BF7D000548048 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		89D2DDE11E5BF7D000548048 /* Staging.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		89D2DDE51E5D575D00548048 /* SigningTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SigningTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		9FCD2CEDB5A95CA80451FEA0 /* Pods_SigningTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SigningTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA688EC8FFE13B776280751 /* Pods-SigningTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SigningTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SigningTest/Pods-SigningTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,25 +38,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D83E1B035191512703D97A9 /* Pods_SigningTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		316383143A7C0C03988D1104 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADA688EC8FFE13B776280751 /* Pods-SigningTest.debug.xcconfig */,
+				150D3FDB078C8DD314027A94 /* Pods-SigningTest.release.xcconfig */,
+				537B960ED2BDB865470DF836 /* Pods-SigningTest.staging.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8990E8F11E5BCFAB0050DD6F = {
 			isa = PBXGroup;
 			children = (
 				89D2DDDE1E5BF7D000548048 /* Config */,
 				8990E8FC1E5BCFAB0050DD6F /* SigningTest */,
 				8990E8FB1E5BCFAB0050DD6F /* Products */,
+				316383143A7C0C03988D1104 /* Pods */,
+				AF492CFA24E92192DC6D36C9 /* Frameworks */,
+				89D2DDE51E5D575D00548048 /* SigningTest-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
 		8990E8FB1E5BCFAB0050DD6F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8990E8FA1E5BCFAB0050DD6F /* SigningTestDebug.app */,
+				8990E8FA1E5BCFAB0050DD6F /* DEBUGVALUEHERE.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +98,14 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		AF492CFA24E92192DC6D36C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FCD2CEDB5A95CA80451FEA0 /* Pods_SigningTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8990E90C1E5BCFAB0050DD6F /* Build configuration list for PBXNativeTarget "SigningTest" */;
 			buildPhases = (
+				476BF86545CE62D860621B6C /* [CP] Check Pods Manifest.lock */,
 				8990E8F61E5BCFAB0050DD6F /* Sources */,
 				8990E8F71E5BCFAB0050DD6F /* Frameworks */,
 				8990E8F81E5BCFAB0050DD6F /* Resources */,
+				3836FAEFFF9C1F6CF18D0B42 /* [CP] Embed Pods Frameworks */,
+				6F5718F66CBB36D872D9489F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -95,7 +126,7 @@
 			);
 			name = SigningTest;
 			productName = SigningTest;
-			productReference = 8990E8FA1E5BCFAB0050DD6F /* SigningTestDebug.app */;
+			productReference = 8990E8FA1E5BCFAB0050DD6F /* DEBUGVALUEHERE.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,6 +141,7 @@
 					8990E8F91E5BCFAB0050DD6F = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = YOURTEAMHERE;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -144,6 +176,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3836FAEFFF9C1F6CF18D0B42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SigningTest/Pods-SigningTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		476BF86545CE62D860621B6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F5718F66CBB36D872D9489F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SigningTest/Pods-SigningTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8990E8F61E5BCFAB0050DD6F /* Sources */ = {
@@ -272,9 +352,11 @@
 		};
 		8990E90D1E5BCFAB0050DD6F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89D2DDDF1E5BF7D000548048 /* Debug.xcconfig */;
+			baseConfigurationReference = ADA688EC8FFE13B776280751 /* Pods-SigningTest.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = YOURTEAMHERE;
 				INFOPLIST_FILE = SigningTest/Info.plist;
@@ -283,15 +365,19 @@
 				PRODUCT_NAME = "$(PRODUCT_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE_SPECIFIER)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SigningTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		8990E90E1E5BCFAB0050DD6F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89D2DDE01E5BF7D000548048 /* Release.xcconfig */;
+			baseConfigurationReference = 150D3FDB078C8DD314027A94 /* Pods-SigningTest.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = YOURTEAMHERE;
 				INFOPLIST_FILE = SigningTest/Info.plist;
@@ -300,6 +386,7 @@
 				PRODUCT_NAME = "$(PRODUCT_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE_SPECIFIER)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SigningTest-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -349,9 +436,11 @@
 		};
 		8990E9101E5BD0A60050DD6F /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89D2DDE11E5BF7D000548048 /* Staging.xcconfig */;
+			baseConfigurationReference = 537B960ED2BDB865470DF836 /* Pods-SigningTest.staging.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = YOURTEAMHERE;
 				INFOPLIST_FILE = SigningTest/Info.plist;
@@ -360,6 +449,7 @@
 				PRODUCT_NAME = "$(PRODUCT_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "$(PROVISIONING_PROFILE_SPECIFIER)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SigningTest-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Staging;
