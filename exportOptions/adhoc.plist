@@ -12,5 +12,10 @@
 	<false/>
 	<key>uploadSymbols</key>
 	<false/>
+	<key>provisioningProfiles</key>
+	<dict>
+			<key>BUNDLE_ID</key>
+			<string>PROVISIONING_PROFILE_NAME</string>
+	</dict>
 </dict>
 </plist>

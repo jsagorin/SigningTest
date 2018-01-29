@@ -7,10 +7,15 @@
 	<key>method</key>
 	<string>app-store</string>
 	<key>teamID</key>
-	<string>YOURTEAMHERE</string>
+	<string>34EV93KC8G</string>
 	<key>uploadBitcode</key>
 	<true/>
 	<key>uploadSymbols</key>
 	<true/>
+	<key>provisioningProfiles</key>
+	<dict>
+			<key>BUNDLE_ID</key>
+			<string>PROVISIONING_PROFILE_NAME</string>
+	</dict>
 </dict>
 </plist>
